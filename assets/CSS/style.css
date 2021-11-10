@@ -58,12 +58,27 @@ top: 21px;
 right: 322px;
 bottom:-23px ;
 /* left: 581px; */
+font-family: 'DroidSansArabic';
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.13px;
+text-align: center;
+
 
 }
-#nav li>a{
+#nav a{
+    text-decoration: none;
     height: 26px;  
- 
+    color: #000000;
+    /* background-color: #000000; */
     
+}
+#nav li>a:hover{
+    color: var(--cerulean);
+
 }
 
 #Connect-with-us{
