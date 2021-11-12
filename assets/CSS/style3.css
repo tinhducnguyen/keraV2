@@ -372,9 +372,3 @@ line-height: normal;
 letter-spacing: 0.75px;
 color: var(--colors-on-background);
 }
-.js-year-list{
-
-    position: absolute;
-    border: none;
-    background: #ffffff;
-}
