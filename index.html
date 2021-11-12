@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/CSS" href="./assets/CSS/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
     <link rel="stylesheet" type="text/CSS" href="./assets/CSS/style.css">
+    <link rel="stylesheet" type="text/CSS" href="./assets/CSS/style3.css">
     <title>Kera</title>
 </head>
 
@@ -55,13 +56,13 @@
                 </span>
             </div>
             <div class="upper-bar list">
-                <div class="Triangle"></div>
+                <button class="js-year-list" type="button" data-toggle="modal" data-target="#myModal"><div class="Triangle"></div></button>
                 <span>
                     الصانع والموديل
                 </span>
             </div>
             <div class="upper-bar list">
-                <div class="Triangle"></div>
+                <button class="js-clock-list" type="button" data-toggle="modal" data-target="#myModal"><div class="Triangle"></div></button>
                 <span>
                     السعر
                 </span>
@@ -1044,10 +1045,177 @@ Maruti Suzuki Vitara Brezza
 </div>
 
 </footer>
+
+    <!-- pop-up -->
+    <div class="modal-clock js-modal-clock">
+        <div class="modal-container js-modal-container">
+            <span class="clock-enter">
+                أدخل عداد المسافة
+              </span>
+            <header class="modal-header">
+                <div class="header-from">
+        
+                    <span>
+                        كم
+                      </span>
+                    <span>
+                        125,000
+                      </span>
+                </div>
+                <div class="header-to">
+                    <span>
+                        كم
+                      </span>
+                      <span>0</span>
+                </div>
+                <div class="Line-8"></div><span class="text-line8">
+                    أو
+                  </span><div class="Line-8-Copy"></div>
+            </header>
+            <span class="clock-odometer">
+                أختر عداد المسافة
+              </span>
+            <div class="clock-distance">
+            
+                  <div class="distance ">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance check">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>    
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>
+                  <div class="distance">
+                      أقل من 50,000 كم
+                  </div>
+            </div>
+        </div>
+        
+        
+        
+        
+            </div>
+        <!-- end modal price -->
+
+        <!-- modal-manufacturing year -->
+<div class="modal-year js-modal-year">
+    <div class="modal-year-container js-year-container">
+        <span class="year-enter">أدخل السنة</span>
+        <div class="year-from">
+            <span>
+                21
+              </span>
+        </div>
+        <div class="year-to">
+            <span>
+                20
+              </span>
+        </div>
+        <div class="line8-year"> </div>
+        <span class="year-or"><span>
+            أو
+          </span></span>
+        <div class="line8-year1"></div>
+        <span class="text-year">
+            <span class="text-year-style-1">اختر السنة</span>
+            <span class="text-year-style-2">(</span>بإمكانك اختيار أكثر من سنة<span class="text-year-style-3">)</span>
+          </span>
+
+      <div class="list-year">
+        <div class="year-list">
+            <span>
+                2021
+            </span>
+        </div>
+        <div class="year-list">
+            <span>
+                2020
+            </span>
+        </div>
+        <div class="year-list">
+            <span>
+                2019
+            </span>
+        </div>
+        <div class="year-list">
+            <span>
+                2018
+            </span>
+        </div>
+        <div class="year-list">
+            <span>
+                2017
+            </span>
+        </div>
+        <div class="year-list">
+            <span>
+                2016
+            </span>
+        </div>
+
+      </div>
+
+    </div>
+</div>
      </div>
 
 
 <!-- end main -->
-       
+<script>
+    const clockBtns = document.querySelectorAll('.js-clock-list')
+    const modal =document.querySelector('.js-modal-clock')
+    const modalContainer = document.querySelector('.js-modal-container')
+    // const modalClose = document.querySelector('js-modal-close')
+    function hidenClockList(){
+        modal.classList.remove('open')
+    }
+    function showClockList(){
+        modal.classList.add('open')
+    }
+    for(const clockBtn of clockBtns) {
+        clockBtn.addEventListener('click',showClockList
+
+        )
+    }
+    modal.addEventListener('click',hidenClockList)
+    modal.addEventListener('click', function (event){
+        event.stopPropagation()
+    })
+</script>
+    <!-- modal year -->
+    <script>
+        const yearBtns = document.querySelectorAll('.js-year-list')
+        const modalY = document.querySelector('.js-modal-year')
+        const modalYearContainer = document.querySelector('.js-year-container')
+        // const modalClose = document.querySelector('js-modal-close')
+        function hidenYearList(){
+            modalY.classList.remove('open')
+        }
+        function showYearList(){
+            modalY.classList.add('open')
+        }
+        for(const yearBtn of yearBtns) {
+            yearBtn.addEventListener('click',showYearList
+
+            )
+        }
+        modalY.addEventListener('click',hidenYearList)
+        modalY.addEventListener('click', function (event){
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>
