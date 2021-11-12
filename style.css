@@ -178,6 +178,7 @@ background-color: rgba(245, 247, 250, 0.5);
 }
 
 .upper-bar.list{
+    z-index: 1;
     right: 40px;
     margin-left: 40px;
     margin-top: 40px;
@@ -1107,3 +1108,15 @@ object-fit: contain;
     color: var(--calcite);
   }
   
+.js-clock-list{
+
+    position: absolute;
+    border: none;
+    background: #ffffff;
+}
+.js-year-list{
+
+    position: absolute;
+    border: none;
+    background: #ffffff;
+}
