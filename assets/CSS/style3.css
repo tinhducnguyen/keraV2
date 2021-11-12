@@ -1,0 +1,380 @@
+/* modal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.clear{
+    clear: both;
+
+}
+#root {
+    max-width: 1440px;
+    margin: 0 auto;
+  } 
+:root{
+--cerulean:#0089cf;
+--greeny-blue:#3db39e;
+--light-mustard:#feca57;
+--colors-on-background:#000000;
+--slate-grey:#6d6e71;
+--calcite:#ffffff;
+}
+
+@font-face {
+    font-family: 'DroidSansArabic';
+    src: url(./fonts/Droid\ Sans\ Arabic\ Regular.ttf);
+}
+.modal-clock{
+    
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    padding: 20px;
+    display: none;
+    animation: modalFadeIn ease 0.3s;
+}
+.modal-clock.open{
+    display: flex;
+    /* background: rgba(51, 170, 51, .1); */
+    /* background-color: violet; */
+    
+}
+.modal-container{
+    width: 583px;
+  height: 653px;
+  position: absolute;
+  top: 127px;
+  left: 19px;
+  
+  padding: 22px 40px 93px 21px;
+  border: solid 0.5px rgba(38, 50, 56, 0.13);
+  background-color: var(--calcite);
+  
+}
+
+.modal-header .header-from{
+    top: 135px;
+    left: 35px;
+    position: absolute;
+    width: 235px;
+    height: 49px; 
+    padding: 14px 66px 13px 24px;
+    opacity: 0.4;
+    border-radius: 6px;
+    border: solid 1px #0089cf;
+    background-color: var(--calcite);
+}
+.clock-enter{
+    width: 149px;
+    height: 31px;
+    position: relative;
+    top: 92px;
+    left: 420px;
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);;
+}
+.header-to span ,.header-from span{
+    opacity: 0.9;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0089cf;
+}
+.modal-header .header-to{
+    position: absolute;
+     top: 135px;
+    right: 41px; 
+    width: 235px;
+    height: 49px; 
+    padding: 14px 66px 13px 24px;
+    opacity: 0.4;
+    border-radius: 6px;
+    border: solid 1px #0089cf;
+    background-color: var(--calcite);
+    
+}
+.Line-8 {
+    width: 235px;
+    height: 1px;
+    position: absolute;
+    top: 216px;
+    left: 34px;
+    border: solid 1px #c5c5c5;
+  }
+  .Line-8-Copy {
+    width: 235px;
+    height: 1px;
+    position: absolute;
+    top: 216px;
+    right: 41px;
+    border: solid 1px #c5c5c5;
+  }
+.text-line8{
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    top: 208px;
+    right: 290px;
+    font-family: 'DroidSansArabic';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--colors-on-background);
+}
+
+.modal-clock .clock-odometer{
+    width: 142px;
+  height: 31px;
+  position: absolute;
+  top: 249px;
+  left: 401px;
+    font-family: 'DroidArabicKufi';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--colors-on-background);
+}
+
+.clock-distance{
+max-width: 550px;
+max-height: 300px;
+position: absolute;
+top: 292px;
+/* left: 32px; */
+
+}
+
+.distance{
+    border-radius: 6px;
+    border: solid 1px var(--cerulean);
+    background-color: var(--calcite);
+    position: relative;
+    width: 235px;
+    height: 49px;
+    float: left;
+    left: -25px;
+    margin-left: 38px;
+    margin-top: 24px;
+    padding: 12px 42px 16px;
+    font-family: 'DroidSansArabic';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: var(--colors-on-background);
+  }
+    
+  .distance.check{
+    background-color: var(--cerulean);
+    color: var(--calcite);
+  }  
+
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        /* opacity: 1; */
+        transform: translateY();
+    }
+    }
+
+
+    /* modal year */
+.modal-year{
+    position: fixed;
+    /* z-index: 5; */
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    display: none;
+    animation: modalFadeIn ease 0.3s;
+}
+.modal-year.open{
+display: flex;
+/* z-index: 1; */
+/* background-color: rgba(51, 170, 51, .1); */
+
+}
+.modal-year-container{
+position: relative;
+width: 650px;
+height: 513px;
+top: 127px;
+left: 361px;
+border: solid 0.5px rgba(38, 50, 56, 0.13);
+background-color: var(--calcite);
+
+}
+.year-enter{
+width: 89px;
+height: 31px;
+position: relative;
+top: 112px;
+left: 555px;
+font-family: 'DroidArabicKufi';
+font-size: 16px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: right;
+color: var(--colors-on-background);
+}
+.year-from, .year-to{
+width: 235px;
+height: 49px;
+border-radius: 6px;
+border: solid 2px #0089cf;
+background-color: var(--calcite);
+}
+
+.year-from{
+padding: 15px 110px 15px 24px;
+position: relative;
+top: 155px;
+left: 104px;
+}
+.year-to{
+position: relative;
+top: 106px;
+left:379px;
+padding: 15px 110px 15px 24px;
+
+}
+.year-to, .year-from span{
+font-family: 'DroidSansArabic';
+font-size: 16px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: var(--colors-on-background);
+}
+
+.line8-year{
+width: 235px;
+height: 1px;
+position: absolute;
+top: 236px;
+left: 104px;
+border: solid 1px #c5c5c5;
+}
+.year-or{
+font-family: 'DroidSansArabic';
+position: absolute;
+top: 236px;
+left: 355px;
+font-size: 12px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: center;
+color: var(--colors-on-background);
+}
+
+.line8-year1{
+width: 235px;
+height: 1px;
+position: relative;
+top: 120px; 
+ left: 379px;
+border: solid 1px #c5c5c5;
+}
+
+.text-year{
+width: 228px;
+height: 31px;
+position: absolute;
+top: 269px;
+right: 36px;
+font-family: 'DroidSansArabic';
+font-size: 12px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: right;
+color: rgba(0, 0, 0, 0.5);
+}
+.text-year .text-year-style-1 {
+font-family: 'DroidArabicKufi';
+font-size: 16px;
+font-weight: bold;
+color: var(--colors-on-background);
+}
+.text-year .text-year-style-2 {
+font-family: Helvetica;
+}
+
+.year-list{
+width: 129px;
+height: 57px;
+margin-left: 61px;
+margin-bottom: 29px;
+padding: 18px 46px 20px 44px;
+position: relative;
+top: 200px;
+left: 33px;
+float: left;
+border-radius: 7.4px;
+border: solid 1px #0089cf;
+background-color: var(--calcite);
+}
+.list-year{
+width: 510px;
+height: 145px;
+display: inline;
+
+}
+.year-list span {
+
+font-family: 'DroidSansArabic';
+font-size: 16px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.75px;
+color: var(--colors-on-background);
+}
+.js-year-list{
+
+    position: absolute;
+    border: none;
+    background: #ffffff;
+}
