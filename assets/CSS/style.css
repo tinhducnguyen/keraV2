@@ -27,7 +27,7 @@
 
 html{
     overflow-x: hidden;
-   
+   /* border: 1px solid #6d6e71; */
     margin: 0 auto;
     /* max-width: 1440px; */
     /* padding: 0 auto; */
@@ -64,6 +64,7 @@ object-fit: contain;
 
 }
 #nav{
+    overflow: hidden;
 position: absolute;
 width: 100%;
 height: 26px;
@@ -95,6 +96,7 @@ text-align: center;
 }
 
 #Connect-with-us{
+    cursor: pointer;
 position: relative;
 width: 157px;
 height: 47px;
@@ -104,6 +106,7 @@ top: 8px;
 
 }
 #Connect-with-us img{
+    cursor: pointer;
 position: absolute;
 right: 16px;
 top: 13px;
@@ -113,6 +116,7 @@ height: 20px;
 }
 
 #Connect-with-us span{
+    cursor: pointer;
     width: 75px;
     height: 22px;
     position: relative;
@@ -154,6 +158,7 @@ background-color: rgba(245, 247, 250, 0.5);
     position: absolute;
     }
 .upper-bar .upper-bar.load{
+    cursor: pointer;
     margin-left: 40px;
     margin-top: 40px;
     width: 192px;
@@ -364,6 +369,7 @@ margin-right: 20px;
 
 
 .col-md-4.banner .btn-item-ads{
+    cursor: pointer;
     width: 231px;
     height: 56px;
     margin: 27px 102px 0;
@@ -386,6 +392,7 @@ margin-right: 20px;
 
 }
 .col-md-4.banner .btn-item-ads1{
+    cursor: pointer;
     width: 231px;
     height: 56px;
     margin: 27px 102px 0;
@@ -446,6 +453,7 @@ margin-right: 20px;
   
 }
 .items .col-md-4 .img-right1{
+    cursor: pointer;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -455,6 +463,7 @@ margin-right: 20px;
     z-index: 2;
 }
 .items .col-md-4 .img-left1{
+    cursor: pointer;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -464,6 +473,53 @@ margin-right: 20px;
     z-index: 2;
 }
 /* end test */
+.carousel-inner .car-img1{ 
+    min-height: 271px;
+    width: 100%;
+     border-top-right-radius: 6.6px;
+     border-top-left-radius: 6.6px;
+   
+ }
+ .items2 .col-md-4 .img-right1{
+     cursor: pointer;
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 113px;
+     right: 18px;
+     bottom: 118px;
+     z-index: 2;
+ }
+ .items2 .col-md-4 .img-left1{
+     cursor: pointer;
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     top: 113px;
+     left: 18px;
+     bottom: 118px;
+     z-index: 2;
+ }
+ .items3 .col-md-4 .img-right1{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 113px;
+    right: 18px;
+    bottom: 118px;
+    z-index: 2;
+}
+.items3 .col-md-4 .img-left1{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 113px;
+    left: 18px;
+    bottom: 118px;
+    z-index: 2;
+}
 .car-name .-SAR{
    position: absolute;
    margin: 23px 186px 4px 17px;
@@ -697,6 +753,7 @@ max-height: 29px;
     
 }
 .banner2 .banner2-btn{
+cursor: pointer;
 width: 231px;
 position: absolute;
 height: 64px;
@@ -834,6 +891,7 @@ left: 389px;
        
     }
    .more .more-btn{
+       cursor: pointer;
         width: 260px;
         height: 67px;
         padding: 18px 50px 18px 65px;
@@ -878,6 +936,7 @@ background-color: rgba(245, 247, 250, 0.5);
 
 
 .back-top{
+    cursor: pointer;
     position: relative;
     width: 231px;
     height: 56px;
@@ -924,7 +983,7 @@ object-fit: contain;
 
 }
 .sub img{
-
+cursor: pointer;
     margin: 0 20px 0 0;
     object-fit: contain;
 }
@@ -942,7 +1001,7 @@ object-fit: contain;
 }
 .footer-connect{
     position: absolute;
-    
+    cursor: pointer;
     top: 150px;
     left: 1116px;
     width: 286px;
@@ -1043,7 +1102,7 @@ object-fit: contain;
     color: var(--calcite);
 }
 
-.help  span{
+.help span{
     position: relative;
     width: 132px;
     margin-top: 28px;
