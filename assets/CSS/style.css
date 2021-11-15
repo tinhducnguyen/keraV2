@@ -26,14 +26,24 @@
 }
 
 html{
+    overflow-x: hidden;
+   
     margin: 0 auto;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    /* padding: 0 auto; */
+    width: 1440px;
+    box-sizing: border-box;
+    
+
 }
 #main{
+    
 width: 1440px;
 background-color: rgba(245, 247, 250, 0.5);
+overflow: hidden;
 }
 .header{
+    z-index: 4;
     background-image: url(../img/header/rectangle-copy-4@2x.png);
     width: 1440px;
     height: 86px;
@@ -137,7 +147,7 @@ height: 20px;
 
 
 .upper-bar{
-    z-index: 2;
+     /* z-index: 4;  */
 background-color: rgba(245, 247, 250, 0.5);
     width: 1440px;
     height: 124.5px;
@@ -179,7 +189,8 @@ background-color: rgba(245, 247, 250, 0.5);
 }
 
 .upper-bar.list{
-    z-index: 1;
+    cursor: pointer;
+    z-index: 6;
     right: 40px;
     margin-left: 40px;
     margin-top: 40px;
@@ -196,6 +207,7 @@ background-color: rgba(245, 247, 250, 0.5);
 
 }
 .upper-bar.list span{
+    
     height: 19px;
     font-family: 'DroidSansArabic';
     font-size: 14px;
@@ -440,7 +452,7 @@ margin-right: 20px;
     top: 113px;
     right: 18px;
     bottom: 118px;
-    z-index: 1;
+    z-index: 2;
 }
 .items .col-md-4 .img-left1{
     width: 20px;
@@ -449,7 +461,7 @@ margin-right: 20px;
     top: 113px;
     left: 18px;
     bottom: 118px;
-    z-index: 1;
+    z-index: 2;
 }
 /* end test */
 .car-name .-SAR{
